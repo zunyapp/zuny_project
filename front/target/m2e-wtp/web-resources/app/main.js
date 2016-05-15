@@ -1,6 +1,6 @@
 var appConfig = {
-		servidor: '/servant/',
-		versao_app: '1.0.0.RELEASE',
+		servidor: '/servant',
+		versao_app: '1.0.0.SNAPSHOT',
 
 		ambiente: {
 			isNotMinify : 'true'

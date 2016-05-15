@@ -1,20 +1,20 @@
 var appConfig = {
-		servidor: '/${contexto.frontend}/',
-		versao_app: '${project.version}',
+		servidor: '/servant',
+		versao_app: '1.0.0.SNAPSHOT',
 
 		ambiente: {
-			isNotMinify : '${minify.skip}'
+			isNotMinify : 'true'
 		},
-		baseUrl :  '${contexto.backend}' ,
+		baseUrl :  'backend' ,
 		defaultRoute : 'login',
 		login: {
-			url: '/${contexto.backend}'  + '/oauth/token',//'login.json',
-			url_usuario: '/${contexto.backend}'  +  '/api/login/dadosUsuarioLogado',// 'usuario.json',
+			url: '/backend'  + '/oauth/token',//'login.json',
+			url_usuario: '/backend'  +  '/api/login/dadosUsuarioLogado',// 'usuario.json',
 			sucesso: 'manterServidor',
 			limite: 30
 		},
 		logout: {
-			url: '/${contexto.backend}/api/login/logout'//logout.json
+			url: '/backend/api/login/logout'//logout.json
 		}
 };
 
